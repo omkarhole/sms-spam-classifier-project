@@ -11,11 +11,7 @@ import pickle
 import string
 from nltk.corpus import stopwords
 
-nltk.download('punkt')
-nltk.download('stopwords')
 
-
-# 
 def transform_text(text):
     text=text.lower()
     text=nltk.word_tokenize(text)
