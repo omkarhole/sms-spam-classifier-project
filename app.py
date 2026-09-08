@@ -1,7 +1,6 @@
 import numpy as np 
 import pandas as pd 
 import streamlit as st
-from nltk.corpus import stopwords 
 import nltk
 from nltk.stem.porter import PorterStemmer
 ps=PorterStemmer()
@@ -10,6 +9,9 @@ import pickle
 
 import string
 from nltk.corpus import stopwords
+
+nltk.download('punkt_tab')
+nltk.download('stopwords')
 
 
 def transform_text(text):
